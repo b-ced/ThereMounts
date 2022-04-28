@@ -1,8 +1,5 @@
-name: Zip Files
-
-on:
-  release:
-    types: [published]
+name: Create Archive
+on: [push]
 
 jobs:
   build:
