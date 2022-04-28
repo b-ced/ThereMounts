@@ -17,7 +17,7 @@ jobs:
 
       - name: Package Project
         run: |
-          zip -r ThereMounts.zip ThereMounts
+          zip -r ThereMounts.zip . -i ThereMounts
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
