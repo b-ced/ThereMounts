@@ -4,7 +4,7 @@
 ## Notes: Invocation évoluée des montures
 ## Notes-frFR: Invocation évoluée des montures
 ## SavedVariables: ThereMounts, ThereMountsConfig
-## Version: 1.15
+## Version: 1.16
 
 ThereMounts.lua
 ThereMountsConfig.lua
