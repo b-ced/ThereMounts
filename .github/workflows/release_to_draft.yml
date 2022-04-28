@@ -17,7 +17,7 @@ jobs:
 
       - name: Package Project
         run: |
-          zip -r Overshields.zip Overshields
+          zip -r  ThereMounts.zip ThereMounts
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -36,6 +36,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./Overshields.zip
-          asset_name: Overshields.zip
+          asset_path: ./ThereMounts.zip
+          asset_name: ThereMounts.zip
           asset_content_type: application/zip
