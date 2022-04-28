@@ -5,11 +5,11 @@ on:
     types: [published]
 
 jobs:
-  zip-files:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: papeloto/action-zip@v1
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
         with:
-          files: dist/manifest.json
-          dest: ThereMounts.zip
+          artifacts: "release.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
